@@ -1,7 +1,8 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watch Fusion Ke</title>
@@ -89,188 +90,176 @@
       color: #aaa;
     }
     /* Dropdown menu styles */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+    /* Optional: Style for the dropdown links */
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      color: black;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    /* Style the navigation bar */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
 
-.dropdown.active .dropdown-content {
-  display: block;
-}
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
 
-/* Optional: Style for the dropdown links */
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: black;
-}
+    .nav-links li {
+      padding: 10px 20px;
+    }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-    * Style the navigation bar */
-nav {
-  background-color: #333;
-  padding: 10px;
-}
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      display: block;
+    }
 
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
+    /* Hover effect for nav links */
+    .nav-links li:hover {
+      background-color: #575757;
+    }
 
-.nav-links li {
-  padding: 10px 20px;
-}
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  display: block;
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      z-index: 1;
+    }
 
-/* Hover effect for nav links */
-.nav-links li:hover {
-  background-color: #575757;
-}
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
-/* Dropdown styles */
-.dropdown {
-  position: relative;
-}
+    .dropdown-content a {
+      padding: 12px;
+      color: white;
+    }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 1;
-}
+    .dropdown-content a:hover {
+      background-color: #575757;
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  padding: 12px;
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: #575757;
-}
     /* Style for the search bar */
-.search-bar {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
 
-.search-bar input {
-  padding: 5px;
-  font-size: 16px;
-  width: 150px; /* Adjust width as needed */
-  margin-right: 10px;
-}
+    .search-bar input {
+      padding: 5px;
+      font-size: 16px;
+      width: 150px; /* Adjust width as needed */
+      margin-right: 10px;
+    }
 
-.search-bar button {
-  padding: 5px 10px;
-  font-size: 16px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+    .search-bar button {
+      padding: 5px 10px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
 
-.search-bar button:hover {
-  background-color: #575757;
-  }
+    .search-bar button:hover {
+      background-color: #575757;
+    }
   </style>
   <!-- Lightbox CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Lightbox JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Lightbox JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body>
   <header>
     <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/watch%20fusion%20logo.jpg?raw=true" alt="Watch Fusion Ke Logo">
     <nav>
       <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li class="dropdown">
-      <a href="#">Watches</a>
-      <div class="dropdown-content">
-        <a href="#">Men's Watches</a>
-        <a href="#">Ladies' Watches</a>
-        <a href="#">Couple Sets</a>
-      </div>
-    </li>
-    <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown" onclick="toggleDropdown()">
+          <a href="#">Watches</a>
+          <div class="dropdown-content">
+            <a href="#">Men's Watches</a>
+            <a href="#">Ladies' Watches</a>
+            <a href="#">Couple Sets</a>
+          </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-     </header> <section class="hero">
+  </header>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search for watches...">
+    <button id="search-btn">Search</button>
+  </div>
+  <section class="hero">
     <h1>Watch Fusion Ke</h1>
     <p>Wear the Moment, Own the Legacy</p>
     <p><strong>Pay on Delivery – Countrywide</strong></p>
-  </section> <section class="products" id="watches">
+  </section>
+  <section class="products" id="watches">
     <div class="product">
-      <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/Cj2302-bkrg%20Black%20Pu%20Leather%20Strap%20Geometric%20Dial%2030m%20Waterproof%20Quartz%20Wristwatch,%20Suitable%20For%20Men's%20Daily%20Wear.jpg?raw=true" alt="POEDAGAR"width="1000"height="450">      <h3>POEDAGAR #628</h3>
+      <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/Cj2302-bkrg%20Black%20Pu%20Leather%20Strap%20Geometric%20Dial%2030m%20Waterproof%20Quartz%20Wristwatch,%20Suitable%20For%20Men's%20Daily%20Wear.jpg?raw=true" alt="POEDAGAR" width="1000" height="450">
+      <h3>POEDAGAR #628</h3>
       <p>Ksh 4,500</p>
       <div class="slider">
-  <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/Cj2302-bkrg%20Black%20Pu%20Leather%20Strap%20Geometric%20Dial%2030m%20Waterproof%20Quartz%20Wristwatch,%20Suitable%20For%20Men's%20Daily%20Wear.jpg?raw=true"data-lightbox="watch-gallery"data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/Cj2302-bkrg%20Black%20Pu%20Leather%20Strap%20Geometric%20Dial%2030m%20Waterproof%20Quartz%20Wristwatch,%20Suitable%20For%20Men's%20Daily%20Wear.jpg?raw=true" alt="Watch 1"style="width:100%;max-width:1000px; height:350px; object-fit: cover;"></a></div>
-  <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true"data-lightbox="watch-gallery"data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true" alt="Watch 2"style="width:100%;max-width:1000px; height:350px; object-fit: cover;"></a></div>
-  <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/xBN8OJHq.jpg?raw=true"data-lightbox="watch-gallery"data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/xBN8OJHq.jpg?raw=true" alt="Watch 3"style="width:100%;max-width: 1000px; height:350px; object-fit: cover;"></a></div>
-</div>
+        <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/Cj2302-bkrg%20Black%20Pu%20Leather%20Strap%20Geometric%20Dial%2030m%20Waterproof%20Quartz%20Wristwatch,%20Suitable%20For%20Men's%20Daily%20Wear.jpg?raw=true" data-lightbox="watch-gallery" data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/Cj2302-bkrg%20Black%20Pu%20Leather%20Strap%20Geometric%20Dial%2030m%20Waterproof%20Quartz%20Wristwatch,%20Suitable%20For%20Men's%20Daily%20Wear.jpg?raw=true" alt="Watch 1" style="width:100%;max-width:1000px; height:350px; object-fit: cover;"></a></div>
+        <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true" data-lightbox="watch-gallery" data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true" alt="Watch 2" style="width:100%;max-width:1000px; height:350px; object-fit: cover;"></a></div>
+        <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/xBN8OJHq.jpg?raw=true" data-lightbox="watch-gallery" data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/xBN8OJHq.jpg?raw=true" alt="Watch 3" style="width:100%;max-width: 1000px; height:350px; object-fit: cover;"></a></div>
+      </div>
       <a href="https://wa.me/254796044969?text=Hi%2C%20I'm%20interested%20in%20POEDAGAR%20%23628">Order on WhatsApp</a>
     </div>
-    <!-- Add more products similarly -->
-  </section> <section class="contact" id="contact">
+  </section>
+  <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p><a href="https://wa.me/254796044969">Chat with us on WhatsApp</a></p>
-  </section> <footer>
+  </section>
+  <footer>
     <p>&copy; 2025 Watch Fusion Ke. All rights reserved.</p>
-    <p><a href="https://www.tiktok.com/@watchfusion_kenya" target="_blank">Follow us on TikTok</a></p>
   </footer>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-   $('.slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  pauseOnHover: true
-    });
-  });
-</script>
-lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true
-});
   <script>
     function toggleDropdown() {
       var dropdown = document.querySelector('.dropdown');
       dropdown.classList.toggle('active');
     }
-  </script>
-  <script>
-  document.getElementById('search-btn').addEventListener('click', function() {
-  var searchQuery = document.getElementById('search-input').value;
-  alert('Searching for: ' + searchQuery);
-});
+
+    // Search button functionality
+    document.getElementById('search-btn').addEventListener('click', function() {
+      var query = document.getElementById('search-input').value;
+      alert('Searching for: ' + query);
+    });
   </script>
 </body>
 </html>
