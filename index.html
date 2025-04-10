@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -22,7 +22,7 @@
       justify-content: space-between;
     }
     header img {
-      height: 80px; /* Increased logo size */
+      height: 80px;
       width: auto;
     }
     nav a {
@@ -102,7 +102,6 @@
     .dropdown.active .dropdown-content {
       display: block;
     }
-    /* Optional: Style for the dropdown links */
     .dropdown-content a {
       padding: 12px 16px;
       text-decoration: none;
@@ -137,7 +136,6 @@
       display: block;
     }
 
-    /* Hover effect for nav links */
     .nav-links li:hover {
       background-color: #575757;
     }
@@ -178,7 +176,7 @@
     .search-bar input {
       padding: 5px;
       font-size: 16px;
-      width: 150px; /* Adjust width as needed */
+      width: 150px;
       margin-right: 10px;
     }
 
@@ -194,12 +192,45 @@
     .search-bar button:hover {
       background-color: #575757;
     }
+
+    /* Adjust product section and button styling for mobile devices */
+    @media (max-width: 768px) {
+      .nav-links li {
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+
+      .product a {
+        padding: 12px 18px;
+        font-size: 16px;
+      }
+
+      .search-bar input {
+        width: 130px;
+      }
+
+      .search-bar button {
+        padding: 8px 15px;
+      }
+    }
+
+    /* Styling the WhatsApp order button */
+    .order-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #25D366; /* WhatsApp Green */
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .order-btn:hover {
+      background-color: #128C7E;
+    }
   </style>
-  <!-- Lightbox CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Lightbox JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
@@ -240,7 +271,7 @@
         <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true" data-lightbox="watch-gallery" data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true" alt="Watch 2" style="width:100%;max-width:1000px; height:350px; object-fit: cover;"></a></div>
         <div><a href="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/xBN8OJHq.jpg?raw=true" data-lightbox="watch-gallery" data-title="watch-title"><img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/xBN8OJHq.jpg?raw=true" alt="Watch 3" style="width:100%;max-width: 1000px; height:350px; object-fit: cover;"></a></div>
       </div>
-      <a href="https://wa.me/254796044969?text=Hi%2C%20I'm%20interested%20in%20POEDAGAR%20%23628">Order on WhatsApp</a>
+      <a href="https://wa.me/254796044969?text=Hi%2C%20I'm%20interested%20in%20POEDAGAR%20%23628" class="order-btn">Order on WhatsApp</a>
     </div>
   </section>
   <section class="contact" id="contact">
