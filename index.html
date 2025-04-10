@@ -114,12 +114,6 @@
       text-align: center;
       padding: 40px 20px;
     }
-    .contact a {
-      color: #ffd700;
-      font-size: 1.2em;
-      text-decoration: none;
-      cursor: pointer;
-    }
     footer {
       text-align: center;
       padding: 20px;
@@ -168,6 +162,7 @@
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     $(document).ready(function(){
+      // Initialize slick slider
       $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -203,7 +198,7 @@
             <a href="#">Couple Sets</a>
           </div>
         </li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="javascript:void(0);" id="contact-btn">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -215,12 +210,22 @@
   </section>
   
   <section class="products" id="watches">
-    <!-- Your product section remains the same -->
-  </section>
+    <div class="slider">
+      <!-- Add your images for the slider here -->
+      <img src="your-image1.jpg" alt="Watch 1">
+      <img src="your-image2.jpg" alt="Watch 2">
+      <img src="your-image3.jpg" alt="Watch 3">
+      <!-- Add more images as needed -->
+    </div>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <a id="contact-btn">Click here to see contact info</a>
+    <!-- Your product details go here -->
+    <div class="product">
+      <img src="your-product-image.jpg" alt="Product 1">
+      <h3>Product Title</h3>
+      <p>Description of the product.</p>
+      <a href="#">Buy Now</a>
+    </div>
+    <!-- Repeat for more products -->
   </section>
 
   <footer>
