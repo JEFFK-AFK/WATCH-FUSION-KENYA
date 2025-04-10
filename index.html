@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -22,7 +22,8 @@
       justify-content: space-between;
     }
     header img {
-      height: 50px;
+      height: 80px; /* Increased logo size */
+      width: auto;
     }
     nav a {
       color: #fff;
@@ -199,6 +200,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Lightbox JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
   <header>
@@ -254,6 +256,19 @@
       var dropdown = document.querySelector('.dropdown');
       dropdown.classList.toggle('active');
     }
+
+    // Initialize the Slick slider
+    $(document).ready(function() {
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
 
     // Search button functionality
     document.getElementById('search-btn').addEventListener('click', function() {
