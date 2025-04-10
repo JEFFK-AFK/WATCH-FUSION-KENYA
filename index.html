@@ -113,6 +113,61 @@
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+    * Style the navigation bar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+}
+
+/* Hover effect for nav links */
+.nav-links li:hover {
+  background-color: #575757;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
   </style>
   <!-- Lightbox CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
@@ -124,25 +179,18 @@
   <header>
     <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/watch%20fusion%20logo.jpg?raw=true" alt="Watch Fusion Ke Logo">
     <nav>
-    <nav class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">WatchFusion Kenya</h1>
-    <ul class="flex space-x-6">
-      <!-- Home -->
-      <li><a href="#home" class="hover:text-blue-500">Home</a></li>
-
-      <!-- Watches Dropdown (clickable) -->
-      <li class="relative dropdown">
-        <a href="#" class="hover:text-blue-500" onclick="toggleDropdown()">Watches</a>
-        <div class="dropdown-content">
-          <a href="#mensWatches" class="block px-4 py-2 hover:bg-gray-100">Men's Watches</a>
-          <a href="#ladiesWatches" class="block px-4 py-2 hover:bg-gray-100">Ladies' Watches</a>
-          <a href="#coupleSets" class="block px-4 py-2 hover:bg-gray-100">Couple Sets</a>
-        </div>
-      </li>
-
-      <!-- Contact -->
-      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-    </ul>
+      <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Watches</a>
+      <div class="dropdown-content">
+        <a href="#">Men's Watches</a>
+        <a href="#">Ladies' Watches</a>
+        <a href="#">Couple Sets</a>
+      </div>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
     </nav>
       <section id="mensWatches" class="py-8">
     <h2 class="text-2xl font-bold">Men's Watches</h2>
