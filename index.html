@@ -99,40 +99,51 @@
   <header>
     <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/watch%20fusion%20logo.jpg?raw=true" alt="Watch Fusion Ke Logo">
     <nav>
-     <nav class="bg-white shadow p-4 flex justify-between items-center">
-  <h1 class="text-xl font-bold">WatchFusion Kenya</h1>
-  <ul class="flex space-x-6">
-    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
-    <li class="relative dropdown">
-      <a href="#" class="hover:text-blue-500">Watches</a>
-      <div class="dropdown-content">
-        <a href="#mensWatches" class="block px-4 py-2 hover:bg-gray-100">Men's Watches</a>
-        <a href="#ladiesWatches" class="block px-4 py-2 hover:bg-gray-100">Ladies' Watches</a>
-        <a href="#coupleSets" class="block px-4 py-2 hover:bg-gray-100">Couple Sets</a>
-      </div>
-    </li>
-    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-  </ul>
+    <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">WatchFusion Kenya</h1>
+    <ul class="flex space-x-6">
+      <!-- Home -->
+      <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+
+      <!-- Watches Dropdown (clickable) -->
+      <li class="relative dropdown">
+        <a href="#" class="hover:text-blue-500" onclick="toggleDropdown()">Watches</a>
+        <div class="dropdown-content">
+          <a href="#mensWatches" class="block px-4 py-2 hover:bg-gray-100">Men's Watches</a>
+          <a href="#ladiesWatches" class="block px-4 py-2 hover:bg-gray-100">Ladies' Watches</a>
+          <a href="#coupleSets" class="block px-4 py-2 hover:bg-gray-100">Couple Sets</a>
+        </div>
+      </li>
+
+      <!-- Contact -->
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+    </ul>
     </nav>
       <section id="mensWatches" class="py-8">
-  <h2 class="text-2xl font-bold">Men's Watches</h2>
-  <p class="mt-4">Here are some of our amazing men's watches. (Images coming soon!)</p>
-</section>
+    <h2 class="text-2xl font-bold">Men's Watches</h2>
+    <p class="mt-4">Here are some of our amazing men's watches. (Images coming soon!)</p>
+  </section>
 
-<section id="ladiesWatches" class="py-8">
-  <h2 class="text-2xl font-bold">Ladies' Watches</h2>
-  <p class="mt-4">Check out our stylish ladies' watches. (Images coming soon!)</p>
-</section>
+  <section id="ladiesWatches" class="py-8">
+    <h2 class="text-2xl font-bold">Ladies' Watches</h2>
+    <p class="mt-4">Check out our stylish ladies' watches. (Images coming soon!)</p>
+  </section>
 
-<section id="coupleSets" class="py-8">
-  <h2 class="text-2xl font-bold">Couple Sets</h2>
-  <p class="mt-4">Perfect watches for couples. (Images coming soon!)</p>
-</section>
+  <section id="coupleSets" class="py-8">
+    <h2 class="text-2xl font-bold">Couple Sets</h2>
+    <p class="mt-4">Perfect watches for couples. (Images coming soon!)</p>
+  </section>
 
-<section id="contact" class="py-8">
-  <h2 class="text-2xl font-bold">Contact Us</h2>
-  <p class="mt-4">Get in touch with us for more information!</p>
-</section>
+  <section id="contact" class="py-8">
+    <h2 class="text-2xl font-bold">Contact Us</h2>
+    <p class="mt-4">Get in touch with us for more information!</p>
+  </section>
+       <script>
+    function toggleDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.classList.toggle('active');
+    }
+  </script>
   </header> <section class="hero">
     <h1>Watch Fusion Ke</h1>
     <p>Wear the Moment, Own the Legacy</p>
