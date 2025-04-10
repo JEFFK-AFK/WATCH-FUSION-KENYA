@@ -157,6 +157,17 @@
       cursor: pointer;
       color: #ffd700;
     }
+
+    /* Slick slider styling */
+    .slider {
+      width: 100%;
+      height: 400px;
+    }
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -209,16 +220,20 @@
     <p><strong>Pay on Delivery – Countrywide</strong></p>
   </section>
   
-  <section class="products" id="watches">
-    <div class="slider">
-      <!-- Add your images for the slider here -->
+  <section class="slider">
+    <div>
       <img src="your-image1.jpg" alt="Watch 1">
-      <img src="your-image2.jpg" alt="Watch 2">
-      <img src="your-image3.jpg" alt="Watch 3">
-      <!-- Add more images as needed -->
     </div>
+    <div>
+      <img src="your-image2.jpg" alt="Watch 2">
+    </div>
+    <div>
+      <img src="your-image3.jpg" alt="Watch 3">
+    </div>
+    <!-- Add more images as needed -->
+  </section>
 
-    <!-- Your product details go here -->
+  <section class="products" id="watches">
     <div class="product">
       <img src="your-product-image.jpg" alt="Product 1">
       <h3>Product Title</h3>
