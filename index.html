@@ -266,5 +266,11 @@ lightbox.option({
       dropdown.classList.toggle('active');
     }
   </script>
+  <script>
+  document.getElementById('search-btn').addEventListener('click', function() {
+  var searchQuery = document.getElementById('search-input').value;
+  alert('Searching for: ' + searchQuery);
+});
+  </script>
 </body>
 </html>
