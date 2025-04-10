@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watch Fusion Ke</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,46 +24,10 @@
     header img {
       height: 50px;
     }
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
-    .nav-links {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .nav-links li {
-      padding: 10px 20px;
-    }
-    .nav-links a {
+    nav a {
+      color: #fff;
+      margin-left: 20px;
       text-decoration: none;
-      color: white;
-      font-size: 16px;
-      display: block;
-      transition: background-color 0.3s;
-    }
-    .nav-links li:hover {
-      background-color: #f1c40f; /* Yellow hover effect */
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #333;
-      min-width: 160px;
-      z-index: 1;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .dropdown-content a {
-      padding: 12px;
-      color: white;
-    }
-    .dropdown-content a:hover {
-      background-color: #575757;
     }
     .hero {
       text-align: center;
@@ -77,6 +41,23 @@
     .hero p {
       font-size: 1.2em;
       color: #ffd700;
+    }
+    .hero .sub-text {
+      color: #ffd700;
+      font-size: 1.2em;
+    }
+    .slider {
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slick-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
     }
     .products {
       display: grid;
@@ -92,6 +73,8 @@
     }
     .product img {
       width: 100%;
+      height: 250px;
+      object-fit: cover;
       border-radius: 10px;
     }
     .product h3 {
@@ -113,6 +96,13 @@
     .contact {
       text-align: center;
       padding: 40px 20px;
+      background: url('https://path/to/your-image.jpg') no-repeat center center/cover;
+      color: #fff;
+    }
+    .contact a {
+      color: #ffd700;
+      font-size: 1.2em;
+      text-decoration: none;
     }
     footer {
       text-align: center;
@@ -120,15 +110,6 @@
       background-color: #111;
       color: #aaa;
     }
-    footer a {
-      color: #ffd700;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Lightbox styles */
     .lightbox {
       display: none;
       position: fixed;
@@ -136,68 +117,34 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.7);
       justify-content: center;
       align-items: center;
     }
     .lightbox-content {
-      background-color: #333;
-      color: white;
+      background-color: #fff;
       padding: 20px;
       border-radius: 10px;
+      max-width: 500px;
       text-align: center;
-      width: 300px;
-      margin: 20px;
     }
-    .lightbox .close-btn {
+    .close-btn {
+      color: #333;
+      font-size: 30px;
+      cursor: pointer;
       position: absolute;
       top: 10px;
       right: 10px;
-      font-size: 30px;
-      cursor: pointer;
-      color: #ffd700;
     }
-
-    /* Slick slider styling */
-    .slider {
-      width: 100%;
-      height: 400px;
-    }
-    .slider img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .product-description {
+      margin-top: 10px;
+      color: #333;
     }
   </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // Initialize slick slider
-      $('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true
-      });
-
-      // Open lightbox for contact info
-      $('#contact-btn').on('click', function() {
-        $('#contact-lightbox').fadeIn();
-      });
-
-      // Close lightbox
-      $('.close-btn').on('click', function() {
-        $('#contact-lightbox').fadeOut();
-      });
-    });
-  </script>
 </head>
 <body>
   <header>
-    <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/watch%20fusion%20logo.jpg?raw=true" alt="Watch Fusion Ke Logo">
+    <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/watch%20fusion%20logo.jpg" alt="Watch Fusion Ke Logo">
     <nav>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
@@ -213,51 +160,101 @@
       </ul>
     </nav>
   </header>
-  
+
   <section class="hero">
     <h1>Watch Fusion Ke</h1>
     <p>Wear the Moment, Own the Legacy</p>
-    <p><strong>Pay on Delivery – Countrywide</strong></p>
+    <p class="sub-text"><strong>Pay on Delivery – Countrywide</strong></p>
   </section>
-  
+
   <section class="slider">
     <div>
-      <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/RADO%20True%20Square%20Skeleton%20Automatic%20_%20Ceramic%E2%80%A6.jpg?raw=true" alt="Men Quartz Watches">
+      <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/watch1.jpg" alt="Watch 1" onclick="showDescription('Watch 1', 'This is a description for Watch 1')">
     </div>
     <div>
-      <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/12%20Trendy%20Watches%20for%20Women%20in%202022.jpg?raw=true" alt="Women Watches">
+      <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/watch2.jpg" alt="Watch 2" onclick="showDescription('Watch 2', 'This is a description for Watch 2')">
     </div>
     <div>
-      <img src="https://github.com/JEFFK-AFK/WATCH-FUSION-KENYA/blob/main/images/OLEVS%20Couple%20Watches%20His%20and%20Her%20Fashion%20Dresse%20Romantic%20Set%20Pair%20Matching%20Stainless%20Steel%20Strap%20Luminous%20Waterproof%20Wrist%20Watch.jpg?raw=true" alt="Couple-set Watches">
+      <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/watch3.jpg" alt="Watch 3" onclick="showDescription('Watch 3', 'This is a description for Watch 3')">
     </div>
-    <!-- Add more images as needed -->
   </section>
 
   <section class="products" id="watches">
     <div class="product">
-      <img src="your-product-image.jpg" alt="Product 1">
+      <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/product1.jpg" alt="Product 1" onclick="showDescription('Product 1', 'Description of Product 1')">
       <h3>Product Title</h3>
       <p>Description of the product.</p>
       <a href="#">Buy Now</a>
     </div>
-    <!-- Repeat for more products -->
+    <div class="product">
+      <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/product2.jpg" alt="Product 2" onclick="showDescription('Product 2', 'Description of Product 2')">
+      <h3>Product Title</h3>
+      <p>Description of the product.</p>
+      <a href="#">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="https://raw.githubusercontent.com/JEFFK-AFK/WATCH-FUSION-KENYA/main/images/product3.jpg" alt="Product 3" onclick="showDescription('Product 3', 'Description of Product 3')">
+      <h3>Product Title</h3>
+      <p>Description of the product.</p>
+      <a href="#">Buy Now</a>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Watch Fusion Ke. All rights reserved.</p>
-    <p><a href="https://www.tiktok.com/@watchfusion_kenya" target="_blank">Follow us on TikTok</a></p>
   </footer>
 
-  <!-- Lightbox -->
-  <div id="contact-lightbox" class="lightbox">
+  <!-- Lightbox for Description -->
+  <div class="lightbox" id="description-lightbox">
     <div class="lightbox-content">
-      <span class="close-btn">&times;</span>
-      <h3>Contact Information</h3>
-      <p><strong>Phone:</strong> +254796044969</p>
-      <p><strong>Email:</strong> info@watchfusion.co.ke</p>
-      <p><strong>Location:</strong> 1221 Moi Avenue, Nairobi, Kenya</p>
+      <span class="close-btn" onclick="closeDescription()">&times;</span>
+      <h2 id="description-title"></h2>
+      <p id="description-text"></p>
     </div>
   </div>
 
+  <!-- Lightbox for Contact Info -->
+  <div class="lightbox" id="contact-lightbox">
+    <div class="lightbox-content">
+      <span class="close-btn" onclick="closeContactInfo()">&times;</span>
+      <h2>Contact Us</h2>
+      <p>Phone: +254796044969</p>
+      <p>Email: info@watchfusion.co.ke</p>
+      <p>Location: 1221 Moi Avenue, Nairobi, Kenya</p>
+    </div>
+  </div>
+
+  <script>
+    // Slick slider initialization
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true
+      });
+    });
+
+    // Show product description in lightbox
+    function showDescription(title, description) {
+      document.getElementById('description-title').textContent = title;
+      document.getElementById('description-text').textContent = description;
+      document.getElementById('description-lightbox').style.display = "flex";
+    }
+
+    // Close the product description lightbox
+    function closeDescription() {
+      document.getElementById('description-lightbox').style.display = "none";
+    }
+
+    // Contact info lightbox
+    document.getElementById("contact-btn").onclick = function() {
+      document.getElementById("contact-lightbox").style.display = "flex";
+    }
+
+    function closeContactInfo() {
+      document.getElementById("contact-lightbox").style.display = "none";
+    }
+  </script>
 </body>
 </html>
