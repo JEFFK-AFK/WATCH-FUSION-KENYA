@@ -17,11 +17,16 @@
     }
 
     header {
-      background-color: #111;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+     background-color: #111;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; /* <-- Keeps it stuck to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Makes sure it's above other content */
     }
 
     header img {
@@ -36,8 +41,9 @@
 
     .hero {
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(180deg, #000, #222);
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #000, #222);
+  margin-top: 120px; /* Pushes content below the fixed header */
     }
 
     .hero h1 {
@@ -295,7 +301,7 @@
       alt="Watch Fusion Ke Logo">
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+        <li><a href="#Home">Home</a></li>
         <li class="dropdown">
           <a href="#">Watches</a>
           <div class="dropdown-content">
@@ -329,7 +335,7 @@
   </div>
 </div>
 
-  <section class="hero">
+  <section class="hero"id="home">
     <h1>Watch Fusion Ke</h1>
     <p>Wear the Moment, Own the Legacy</p>
     <p><strong>Pay on Delivery – Countrywide</strong></p>
