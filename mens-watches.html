@@ -57,17 +57,5 @@
     <!-- You can copy this whole watch-card div to add more watches -->
   </div>
   <!-- JavaScript Code -->
-<script>
-  // Loop through each .watch-card and add event listeners for all thumbnails
-  document.querySelectorAll('.watch-card').forEach(function(card) {
-    card.querySelectorAll('.thumb').forEach(function(thumb) {
-      thumb.addEventListener('click', function() {
-        var newSrc = this.getAttribute('data-image'); // Get the image source from the data attribute
-        var mainWatch = card.querySelector('.main-watch-img'); // Find the main watch image within the same card
-        mainWatch.src = newSrc; // Change the main watch image to the thumbnail's image
-      });
-    });
-  });
-</script>
 </body>
 </html>
