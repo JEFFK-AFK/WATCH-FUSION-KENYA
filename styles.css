@@ -233,3 +233,68 @@ p {
 .whatsapp-btn:hover {
   background-color: #128c7e;
 }
+/* Grid layout for all watch cards */
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+/* Single watch card styling */
+.watch-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Main image styling */
+.main-watch-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Thumbnails */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.thumbnails img:hover {
+  border-color: #000;
+}
+
+/* Product title and price */
+.watch-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.watch-card p {
+  margin: 0.25rem 0;
+  color: #555;
+}
